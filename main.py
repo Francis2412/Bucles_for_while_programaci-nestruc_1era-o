@@ -1,4 +1,6 @@
 import os
+from forejer import ventasminisuper, Recepcióncafé, Revisióninventario, Producciónpan, Evaluaciónservicio
+from whileejer import Cierrecaja, Accesosistema, Cantidadpedido, Combustiblereparto, Reposiciónexistencias
 
 def ejemplo ():
     os.system("cls")
