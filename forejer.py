@@ -33,17 +33,20 @@ def Revisióninventario(): #falta imprimir los q tienen menos de 10 uhhhhhh
     #Solicita nombre y existencia; 
     #muestra los que tienen menos de 10 unidades y cuenta las alertas.
     alerta = 0
+    nomproducto = ""
     for i in range(8):
         print(f"Producto #{i+1}")
         nombreproducto = input("Ingrese el nombre del producto: ")
         unidades = int(input("Ingrese la cantidad existente: ")) 
         if unidades < 10:
             print(f"¡Oh no! el producto '{nombreproducto}' tiene menos de 10 unidades...")
+            nomproducto += nombreproducto + "\n"
             alerta += 1
-        
+    print("Productos que tienen menos de 10 unidades: ")
+    print(nomproducto)
     print (f"Cantidad de alertas:{alerta}")
-    
 
+    
 def Producciónpan():
     os.system("cls")
     # Una panadería registra durante 6 días la producción y las ventas.
