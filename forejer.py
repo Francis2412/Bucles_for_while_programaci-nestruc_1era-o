@@ -13,6 +13,7 @@ def ventasminisuper():
     print(f"El promedio diario es: {promedio}")
     print("")
 
+
 def Recepcióncafé():
     os.system("cls")
     #Una cooperativa recibe 5 sacos.
@@ -65,7 +66,6 @@ def Producciónpan():
     print(f"Productos sobrante: {sobrante}")
 
     
-
 def Evaluaciónservicio():
     os.system("cls")
     #Un restaurante recoge 10 calificaciones entre 1 y 5.

@@ -14,6 +14,7 @@ def Cierrecaja():
     print(f"El total recaudado es igual a: {total}")
     print(f"La cantidad de ventas fue: {ventas}")
 
+
 def Accesosistema():
     os.system("cls")
     #Solicita la clave hasta que sea correcta. 
@@ -29,8 +30,6 @@ def Accesosistema():
 
     print("¡Contraseña correcta!")
     print(f"Se necesitaron {intentos + 1} intentos.")
-
-
 
 
 def Cantidadpedido():
@@ -63,10 +62,6 @@ def Combustiblereparto():
         if consumo == 1:
             print("¡Alerta! se esta quedando sin gasolina, solo queda 1 litro")
 
-    
-
-
-    
 
 def Reposiciónexistencias():
     os.system("cls")
