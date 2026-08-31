@@ -34,14 +34,13 @@ def Revisióninventario(): #falta imprimir los q tienen menos de 10 uhhhhhh
     #muestra los que tienen menos de 10 unidades y cuenta las alertas.
     alerta = 0
     for i in range(8):
+        print(f"Producto #{i+1}")
         nombreproducto = input("Ingrese el nombre del producto: ")
         unidades = int(input("Ingrese la cantidad existente: ")) 
         if unidades < 10:
             print(f"¡Oh no! el producto '{nombreproducto}' tiene menos de 10 unidades...")
             alerta += 1
-        else: 
-            break
-
+        
     print (f"Cantidad de alertas:{alerta}")
     
 
