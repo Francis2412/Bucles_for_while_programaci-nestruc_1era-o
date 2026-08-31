@@ -5,6 +5,7 @@ def Cierrecaja():
     # Calcula el total recaudado y la cantidad de ventas.
     total= 0
     ventas = 0
+    print("--Si desea salir ingrese 0--")
     venta = int(input("Ingrese la cantidad a vender: "))
     while venta != 0:
         total += venta
@@ -53,10 +54,16 @@ def Combustiblereparto():
     gasolina = int(input("Ingrese cuanta gasolina consumio: "))
     while consumo  > 1:
         consumo -=  gasolina
-        if consumo  > 1:
+        if consumo  > 1 and consumo <8:
           gasolina = int(input("Ingrese cuanta gasolina consumio: "))
+        
+        if consumo < 1:
+            print("Uhh... Se quedo sin gasolina :c")
+            break
+        if consumo == 1:
+            print("¡Alerta! se esta quedando sin gasolina, solo queda 1 litro")
 
-    print ("¡Alerta! se esta quedando sin gasolina, solo queda 1 litro")
+    
 
 
     
