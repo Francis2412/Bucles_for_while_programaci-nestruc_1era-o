@@ -2,7 +2,6 @@ import os
 from forejer import ventasminisuper, Recepcióncafé, Revisióninventario, Producciónpan, Evaluaciónservicio
 from whileejer import Cierrecaja, Accesosistema, Cantidadpedido, Combustiblereparto, Reposiciónexistencias
 
-
 def main():
     os.system("cls")
     print("*********** MENU DE LOS EJERCICIOS ***********")

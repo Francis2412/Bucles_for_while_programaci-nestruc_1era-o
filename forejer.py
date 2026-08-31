@@ -5,7 +5,7 @@ def ventasminisuper():
     # Calcula el total semanal y el promedio diario.
     total = 0 
     for i in range(7):
-        venta = int(input("Ingrese la venta del día: "))
+        venta = int(input(f"Ingrese la venta del día {i + 1 }: "))
         total += venta
     promedio = total / 7 
 
@@ -26,7 +26,7 @@ def Recepcióncafé():
     print(f"El peso total es: {pesoTotal}")
 
 
-def Revisióninventario():
+def Revisióninventario(): #falta imprimir los q tienen menos de 10 uhhhhhh
     os.system("cls")
     #Una distribuidora revisa 8 productos.
     #Solicita nombre y existencia; 
@@ -38,6 +38,8 @@ def Revisióninventario():
         if unidades < 10:
             print(f"¡Oh no! el producto '{nombreproducto}' tiene menos de 10 unidades...")
             alerta += 1
+        else: 
+            break
 
     print (f"Cantidad de alertas:{alerta}")
     
@@ -49,7 +51,8 @@ def Producciónpan():
     totalProduccion = 0
     totalVentas = 0
     for i in range(6):
-        produccion = int(input("Ingrese la producción del día: "))
+        print(f"Día #{i+1}")
+        produccion = int(input(f"Ingrese la producción del día: "))
         ventas = int(input("Ingrese las ventas del día: "))
         
         totalProduccion += produccion
@@ -71,6 +74,7 @@ def Evaluaciónservicio():
     califbuenas = 0
 
     for i in range(10):
+        print(f"Calificación #{i+1}")
         calificacion = int(input("Ingrese una calificacion de 1 a 5: "))
         total += calificacion
 
