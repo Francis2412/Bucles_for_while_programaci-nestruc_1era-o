@@ -6,7 +6,7 @@ def ventasminisuper():
     total = 0 
     for i in range(7):
         venta = int(input("Ingrese la venta del día: "))
-        total =+ venta
+        total += venta
     promedio = total / 7 
 
     print(f"El totla semanal es: {total}")
@@ -49,11 +49,11 @@ def Producciónpan():
     totalProduccion = 0
     totalVentas = 0
     for i in range(6):
-        produccion = input(int("Ingrese la producción del dia"))
-        ventas = input(int("Ingrese las ventas del dia: "))
-
-    totalProduccion += produccion
-    totalVentas += ventas
+        produccion = int(input("Ingrese la producción del día: "))
+        ventas = int(input("Ingrese las ventas del día: "))
+        
+        totalProduccion += produccion
+        totalVentas += ventas
 
     sobrante = totalProduccion - totalVentas
 
