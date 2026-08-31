@@ -1,4 +1,6 @@
+import os
 def Cierrecaja():
+    os.system("cls")
     #Ingresa los montos de ventas hasta escribir 0.
     # Calcula el total recaudado y la cantidad de ventas.
     total= 0
@@ -12,6 +14,7 @@ def Cierrecaja():
     print(f"La cantidad de ventas fue: {ventas}")
 
 def Accesosistema():
+    os.system("cls")
     #Solicita la clave hasta que sea correcta. 
     #Cuenta los intentos e informa cuántos fueron necesarios.
     #La contra es conejoarcoiris
@@ -30,6 +33,7 @@ def Accesosistema():
 
 
 def Cantidadpedido():
+    os.system("cls")
     #Un distribuidor acepta de 1 a 100 unidades. 
     #Solicita la cantidad hasta que sea válida y luego calcula el total.
     cantidad = int(input("Ingresa la cantiad de unidades que deseas: "))
@@ -41,6 +45,7 @@ def Cantidadpedido():
     
 
 def Combustiblereparto():
+    os.system("cls")
     #Una motocicleta inicia con 8 litros. 
     #Registra el consumo de cada recorrido
     #mientras quede combustible y alerta al llegar a 1 litro.
@@ -57,6 +62,7 @@ def Combustiblereparto():
     
 
 def Reposiciónexistencias():
+    os.system("cls")
     #Una tienda tiene 3 unidades y desea llegar a 20.
     #Solicita cada reposición y termina al alcanzar o superar la meta.
     unidades = 3
